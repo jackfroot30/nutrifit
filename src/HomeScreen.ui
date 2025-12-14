@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>837</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>500</width>
+      <height>500</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollArea{
+background-color: white
+}</string>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="page_contents">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>799</width>
+       <height>779</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>500</width>
+       <height>500</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+background-color: white}</string>
+     </property>
+     <widget class="AuroraBackground" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>741</width>
+        <height>221</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget{background-color: qradialgradient(
+		spread: pad, 
+		cx: 0.5, cy: 0.5,    
+         radius: 0.8,          
+         fx: 0.5, fy: 0.5,   
+         stop: 0    #FFD5D5, 
+         stop: 0.26 #FFB5B5, 
+         stop: 1    #FFD5F6   
+    );
+    border-radius: 15px;}</string>
+      </property>
+      <widget class="QLabel" name="lbl1">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>20</y>
+         <width>261</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Epilogue</family>
+         <pointsize>30</pointsize>
+         <italic>false</italic>
+         <fontweight>Medium</fontweight>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color: transparent;
+	font: 500 30pt &quot;Epilogue&quot;;
+	color:#1a1a1a;
+}</string>
+       </property>
+       <property name="text">
+        <string>NutriFit Tracker</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="lbl2">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>70</y>
+         <width>281</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+	background-color:transparent;
+	font: 300 12pt &quot;Epilogue&quot;;
+	color:#1a1a1a;;
+}</string>
+       </property>
+       <property name="text">
+        <string>Track your Nutrition, Achieve your Fitness Goals</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="start_btn">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>120</y>
+         <width>581</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background-color:#1a1a1a;
+border-radius:30px;
+font: 600 13pt &quot;Epilogue&quot;;
+}
+/*QPushButton:hover{
+background-color:#1a1a1a;
+border-radius:30px;
+padding: 15px;
+font-size: 20px
+}*/</string>
+       </property>
+       <property name="text">
+        <string>Get Started</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="food_lbl">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>260</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border:0.5px solid #c0c0c0;	
+	border-radius: 10px;
+	font: 600 20pt &quot;Epilogue&quot;;
+	color: #1d1d1d;
+	padding-bottom: 25px
+}</string>
+      </property>
+      <property name="text">
+       <string>Food Scanning</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_f">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>290</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color:transparent;
+	font: 200 10pt &quot;Epilogue&quot;;
+	color: #1a1a1a;
+	padding-top: 5px
+}</string>
+      </property>
+      <property name="text">
+       <string>Take photo of your food and instantly get calorie and macro information</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="recipe_lbl">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>660</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border:0.5px solid #c0c0c0;	
+	border-radius: 10px;
+	font: 600 20pt &quot;Epilogue&quot;;
+	color: #1d1d1d;
+	padding-bottom: 25px
+}</string>
+      </property>
+      <property name="text">
+       <string>Recipe Builder</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="progress_lbl">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>460</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border:0.5px solid #c0c0c0;	
+	border-radius: 10px;
+	font: 600 20pt &quot;Epilogue&quot;;
+	color: #1d1d1d;
+	padding-bottom: 25px
+}</string>
+      </property>
+      <property name="text">
+       <string>Track Progress and Customized Goals</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_r">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>690</y>
+        <width>371</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color:transparent;
+	font: 200 10pt &quot;Epilogue&quot;;
+	color: #1a1a1a;
+	padding-top: 5px
+}</string>
+      </property>
+      <property name="text">
+       <string>Create Custom recipes and calculate their nutrional values</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_p">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>490</y>
+        <width>481</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color:transparent;
+	font: 200 10pt &quot;Epilogue&quot;;
+	color: #1a1a1a;
+	padding-top: 5px
+}</string>
+      </property>
+      <property name="text">
+       <string>Monitor your daily intake and set custom calorie and macro targets based on yuor fitness goals</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="workout_lbl">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>560</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border:0.5px solid #c0c0c0;	
+	border-radius: 10px;
+	font: 600 20pt &quot;Epilogue&quot;;
+	color: #1d1d1d;
+	padding-bottom: 25px
+}</string>
+      </property>
+      <property name="text">
+       <string>Custom Workouts </string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_w">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>590</y>
+        <width>221</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color:transparent;
+	font: 200 10pt &quot;Epilogue&quot;;
+	color: #1a1a1a;
+	padding-top: 5px
+}</string>
+      </property>
+      <property name="text">
+       <string>build custom workouts for any muscle group</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="food_scan_button">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>270</y>
+        <width>731</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color: transparent;
+border:none;
+
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="meditation_lbl">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	border:0.5px solid #c0c0c0;	
+	border-radius: 10px;
+	font: 600 20pt &quot;Epilogue&quot;;
+	color: #1d1d1d;
+	padding-bottom: 25px
+}</string>
+      </property>
+      <property name="text">
+       <string>Meditation Timer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_w_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>390</y>
+        <width>421</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel{
+	background-color:transparent;
+	font: 200 10pt &quot;Epilogue&quot;;
+	color: #1a1a1a;
+	padding-top: 5px
+}</string>
+      </property>
+      <property name="text">
+       <string>Start guided or silent meditation sessions with customizable duration and interval bells</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="meditation_link_btn">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>360</y>
+        <width>731</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+background-color:transparent;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNutriFit_Tracker">
+    <property name="title">
+     <string>NutriFit Tracker</string>
+    </property>
+   </widget>
+   <addaction name="menuNutriFit_Tracker"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>AuroraBackground</class>
+   <extends>QWidget</extends>
+   <header>aurora_bg</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>start_btn</tabstop>
+  <tabstop>scrollArea</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NutriFitMainWindow</class>
+ <widget class="QMainWindow" name="NutriFitMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>NutriFit</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    <property name="contentsMargins">
+     <left>10</left>
+     <top>6</top>
+     <right>10</right>
+     <bottom>6</bottom>
+    </property>
+
+    <!-- Top title bar -->
+    <item>
+     <widget class="QFrame" name="topBar">
+      <property name="minimumHeight">
+       <number>88</number>
+      </property>
+      <layout class="QHBoxLayout" name="topBarLayout">
+       <item>
+        <spacer name="spacer_top_left">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="appTitle">
+         <property name="text">
+          <string>NutriFit</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font-size:28px; font-weight:600;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="spacer_top_right">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <!-- Stacked widget: landing -> profile create -> main app -->
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <!-- Landing page -->
+      <widget class="QWidget" name="landingPage">
+       <property name="styleSheet">
+        <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #f8f2ff, stop:1 #fff3ec);</string>
+       </property>
+       <layout class="QVBoxLayout" name="landingLayout">
+        <property name="contentsMargins">
+         <left>40</left>
+         <top>30</top>
+         <right>40</right>
+         <bottom>30</bottom>
+        </property>
+        <item>
+         <spacer name="landing_spacer_top">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="landingTitle">
+          <property name="text">
+           <string>NutriFit Tracker</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:40px; font-weight:700; color:#111;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="landingSub">
+          <property name="text">
+           <string>Track your nutrition, achieve your fitness goals</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-size:18px; color:#666;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="landing_spacer_mid">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="buttonGetStarted">
+          <property name="text">
+           <string>Get Started</string>
+          </property>
+          <property name="minimumHeight">
+           <number>64</number>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {background: qlineargradient(x1:0,y1:0,x2:1,y2:1, stop:0 #111, stop:1 #222); color: white; border-radius:34px; font-size:18px; padding:18px 32px;} QPushButton:hover{opacity:0.95;}</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="landing_spacer_bottom">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Profile creation page -->
+      <widget class="QWidget" name="profileCreatePage">
+       <layout class="QVBoxLayout" name="profileCreateLayout">
+        <property name="contentsMargins">
+         <left>60</left>
+         <top>20</top>
+         <right>60</right>
+         <bottom>20</bottom>
+        </property>
+
+        <item>
+         <widget class="QGroupBox" name="groupProfileCard">
+          <property name="title">
+           <string>Create Your Profile</string>
+          </property>
+          <layout class="QFormLayout" name="formLayoutProfile">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelName"><property name="text"><string>Name</string></property></widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="inputName"><property name="placeholderText"><string>Enter your name</string></property></widget>
+           </item>
+
+           <item row="1" column="0"><widget class="QLabel" name="labelAge2"><property name="text"><string>Age</string></property></widget></item>
+           <item row="1" column="1"><widget class="QSpinBox" name="spinAge"><property name="maximum"><number>120</number></property></widget></item>
+
+           <item row="2" column="0"><widget class="QLabel" name="labelGender2"><property name="text"><string>Gender</string></property></widget></item>
+           <item row="2" column="1"><widget class="QComboBox" name="inputGender"><item><property name="text"><string>Male</string></property></item><item><property name="text"><string>Female</string></property></item><item><property name="text"><string>Other</string></property></item></widget></item>
+
+           <item row="3" column="0"><widget class="QLabel" name="labelHeight2"><property name="text"><string>Height (cm)</string></property></widget></item>
+           <item row="3" column="1"><widget class="QDoubleSpinBox" name="inputHeight"><property name="maximum"><number>300.00</number></property></widget></item>
+
+           <item row="4" column="0"><widget class="QLabel" name="labelWeight2"><property name="text"><string>Weight (kg)</string></property></widget></item>
+           <item row="4" column="1"><widget class="QDoubleSpinBox" name="inputWeight"><property name="maximum"><number>500.00</number></property></widget></item>
+
+           <item row="5" column="0"><widget class="QLabel" name="labelGoal2"><property name="text"><string>Goal Weight (kg)</string></property></widget></item>
+           <item row="5" column="1"><widget class="QDoubleSpinBox" name="inputGoalWeight"><property name="maximum"><number>500.00</number></property></widget></item>
+
+           <item row="6" column="0"><widget class="QLabel" name="labelActivity2"><property name="text"><string>Activity Level</string></property></widget></item>
+           <item row="6" column="1"><widget class="QComboBox" name="inputActivityLevel">
+            <item><property name="text"><string>Sedentary (little or no exercise)</string></property></item>
+            <item><property name="text"><string>Light (1-3 days/week)</string></property></item>
+            <item><property name="text"><string>Moderate (3-5 days/week)</string></property></item>
+            <item><property name="text"><string>Active (6-7 days/week)</string></property></item>
+           </widget></item>
+
+           <item row="7" column="1">
+            <widget class="QPushButton" name="buttonCreateProfile">
+             <property name="text"><string>Create Profile</string></property>
+             <property name="minimumHeight"><number>56</number></property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{background:black;color:white;border-radius:28px;font-size:18px;padding:10px 22px;}</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+
+      <!-- Main app container (after profile created) -->
+      <widget class="QWidget" name="mainPage">
+       <layout class="QVBoxLayout" name="mainPageLayout">
+        <property name="contentsMargins">
+         <left>10</left>
+         <top>0</top>
+         <right>10</right>
+         <bottom>10</bottom>
+        </property>
+
+        <!-- Top nav with stacked page selector -->
+        <item>
+         <widget class="QFrame" name="navFrame">
+          <property name="minimumHeight"><number>80</number></property>
+          <layout class="QHBoxLayout" name="navLayout">
+           <item>
+            <spacer name="nav_left_spacer"/>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonDashboard">
+             <property name="text"><string>Dashboard</string></property>
+             <property name="checkable"><bool>false</bool></property>
+             <property name="styleSheet"><string notr="true">QPushButton{background:#EDEDED;border-radius:12px;padding:10px 18px;font-size:18px;}</string></property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonScan">
+             <property name="text"><string>Scan</string></property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonRecipes">
+             <property name="text"><string>Recipes</string></property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="buttonProfile">
+             <property name="text"><string>Profile</string></property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="nav_right_spacer"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+
+        <!-- Inner stacked pages for Dashboard, Scan, Recipes, Exercise, ProfileView -->
+        <item>
+         <widget class="QStackedWidget" name="innerPages">
+          <!-- Dashboard page -->
+          <widget class="QWidget" name="dashboardPage">
+           <layout class="QVBoxLayout" name="dashboardLayout">
+            <property name="contentsMargins"><left>18</left><top>6</top><right>18</right><bottom>6</bottom></property>
+
+            <item>
+             <widget class="QLabel" name="dashboardTitle">
+              <property name="text"><string>Today's Progress</string></property>
+              <property name="alignment"><set>Qt::AlignCenter</set></property>
+              <property name="styleSheet"><string notr="true">font-size:36px;font-weight:500;</string></property>
+             </widget>
+            </item>
+
+            <!-- cards row -->
+            <item>
+             <widget class="QWidget" name="cardsRow">
+              <layout class="QGridLayout" name="cardsGrid">
+               <item row="0" column="0">
+                <widget class="QGroupBox" name="cardCalories">
+                 <property name="title"><string>Calories</string></property>
+                 <layout class="QVBoxLayout">
+                  <item><widget class="QLabel" name="labelCaloriesValue"><property name="text"><string>0</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="styleSheet"><string notr="true">font-size:36px;font-weight:600;</string></property></widget></item>
+                  <item><widget class="QLabel" name="labelCaloriesGoal"><property name="text"><string>Goal: 630</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+                  <item><widget class="QProgressBar" name="prog_calories"><property name="maximum"><number>100</number></property></widget></item>
+                 </layout>
+                </widget>
+               </item>
+
+               <item row="0" column="1">
+                <widget class="QGroupBox" name="cardProtein">
+                 <property name="title"><string>Protein</string></property>
+                 <layout class="QVBoxLayout">
+                  <item><widget class="QLabel" name="labelProteinValue"><property name="text"><string>0g</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="styleSheet"><string notr="true">font-size:36px;font-weight:600;</string></property></widget></item>
+                  <item><widget class="QLabel" name="labelProteinGoal"><property name="text"><string>Goal: 47.25g</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+                  <item><widget class="QProgressBar" name="prog_protein"/></item>
+                 </layout>
+                </widget>
+               </item>
+
+               <item row="1" column="0">
+                <widget class="QGroupBox" name="cardCarbs">
+                 <property name="title"><string>Carbs</string></property>
+                 <layout class="QVBoxLayout">
+                  <item><widget class="QLabel" name="labelCarbsValue"><property name="text"><string>0g</string></property></widget></item>
+                  <item><widget class="QLabel" name="labelCarbsGoal"><property name="text"><string>Goal: 63g</string></property></widget></item>
+                  <item><widget class="QProgressBar" name="prog_carbs"/></item>
+                 </layout>
+                </widget>
+               </item>
+
+               <item row="1" column="1">
+                <widget class="QGroupBox" name="cardFat">
+                 <property name="title"><string>Fat</string></property>
+                 <layout class="QVBoxLayout">
+                  <item><widget class="QLabel" name="labelFatValue"><property name="text"><string>0g</string></property></widget></item>
+                  <item><widget class="QLabel" name="labelFatGoal"><property name="text"><string>Goal: 21g</string></property></widget></item>
+                  <item><widget class="QProgressBar" name="prog_fats"/></item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+
+            <!-- Today's meals -->
+            <item>
+             <widget class="QGroupBox" name="groupMealsToday">
+              <property name="title"><string>Today's Meals</string></property>
+              <layout class="QVBoxLayout">
+               <item><widget class="QLabel" name="labelNoMeals"><property name="text"><string>No meals logged yet today</string></property><property name="alignment"><set>Qt::AlignCenter</set></property></widget></item>
+              </layout>
+             </widget>
+            </item>
+
+            <!-- Scan big button -->
+            <item>
+             <widget class="QPushButton" name="scanBtn">
+              <property name="text"><string>Scan Food</string></property>
+              <property name="minimumHeight"><number>60</number></property>
+              <property name="styleSheet"><string notr="true">QPushButton{background: qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 #111,stop:1 #333); color:white; border-radius:32px; font-size:18px; padding:14px 24px;}</string></property>
+             </widget>
+            </item>
+
+           </layout>
+          </widget>
+
+          <!-- Scan page -->
+          <widget class="QWidget" name="scanPage">
+           <layout class="QVBoxLayout">
+            <item>
+             <widget class="QLabel" name="scanTitle"><property name="text"><string>Scan Your Food</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="styleSheet"><string notr="true">font-size:30px;</string></property></widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonOpenCamera"><property name="text"><string>Open Camera</string></property></widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="buttonUploadPhoto"><property name="text"><string>Upload Photo</string></property></widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="scanResultBox">
+              <property name="title"><string>Detected</string></property>
+              <layout class="QFormLayout">
+               <item row="0" column="0"><widget class="QLabel" name="labelDetectedFoodLabel"><property name="text"><string>Food</string></property></widget></item>
+               <item row="0" column="1"><widget class="QLabel" name="labelDetectedFood"><property name="text"><string>-</string></property></widget></item>
+               <item row="1" column="0"><widget class="QLabel" name="labelFoodCaloriesLabel"><property name="text"><string>Calories</string></property></widget></item>
+               <item row="1" column="1"><widget class="QLabel" name="labelFoodCalories"><property name="text"><string>0</string></property></widget></item>
+               <item row="2" column="0"><widget class="QLabel" name="labelFoodProteinLabel"><property name="text"><string>Protein</string></property></widget></item>
+               <item row="2" column="1"><widget class="QLabel" name="labelFoodProtein"><property name="text"><string>0</string></property></widget></item>
+               <item row="3" column="0"><widget class="QLabel" name="labelFoodCarbsLabel"><property name="text"><string>Carbs</string></property></widget></item>
+               <item row="3" column="1"><widget class="QLabel" name="labelFoodCarbs"><property name="text"><string>0</string></property></widget></item>
+               <item row="4" column="0"><widget class="QLabel" name="labelFoodFatLabel"><property name="text"><string>Fat</string></property></widget></item>
+               <item row="4" column="1"><widget class="QLabel" name="labelFoodFat"><property name="text"><string>0</string></property></widget></item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+
+          <!-- Recipes page -->
+          <widget class="QWidget" name="recipesPage">
+           <layout class="QVBoxLayout" name="recipesLayout">
+            <item>
+             <widget class="QLabel" name="recipesTitle"><property name="text"><string>Recipe Builder</string></property><property name="alignment"><set>Qt::AlignCenter</set></property><property name="styleSheet"><string notr="true">font-size:32px;</string></property></widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="txt_search"><property name="placeholderText"><string>Search ingredients...</string></property></widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="recipesInner">
+              <layout class="QHBoxLayout">
+               <item>
+                <widget class="QListWidget" name="listAllIngredients"/>
+               </item>
+               <item>
+                <layout class="QVBoxLayout">
+                 <item><widget class="QPushButton" name="buttonAddIngredient"><property name="text"><string>Add</string></property></widget></item>
+                 <item><widget class="QPushButton" name="buttonRemoveIngredient"><property name="text"><string>Remove</string></property></widget></item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QListWidget" name="listSelectedIngredients"/>
+               </item>
+               <item>
+                <layout class="QVBoxLayout">
+                 <item><widget class="QLabel" name="labelTotalCalories"><property name="text"><string>0</string></property></widget></item>
+                 <item><widget class="QLabel" name="labelTotalProtein"><property name="text"><string>0</string></property></widget></item>
+                 <item><widget class="QLabel" name="labelTotalCarbs"><property name="text"><string>0</string></property></widget></item>
+                 <item><widget class="QLabel" name="labelTotalFat"><property name="text"><string>0</string></property></widget></item>
+                 <item><widget class="QLineEdit" name="lineMealName" /><property name="placeholderText"><string>Recipe name</string></property></item>
+                 <item><widget class="QPushButton" name="buttonCalculateMacros"><property name="text"><string>Calculate</string></property></widget></item>
+                 <item><widget class="QPushButton" name="buttonSaveMeal"><property name="text"><string>Save Recipe</string></property></widget></item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+
+            <item>
+             <widget class="QGroupBox" name="savedRecipesBox">
+              <property name="title"><string>Saved Recipes</string></property>
+              <layout class="QVBoxLayout">
+               <item><widget class="QPushButton" name="buttonLoadRecipes"><property name="text"><string>Load Recipes</string></property></widget></item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+
+          <!-- Exercise page -->
+          <widget class="QWidget" name="exercisePage">
+           <layout class="QVBoxLayout">
+            <item>
+             <layout class="QHBoxLayout">
+              <item><widget class="QComboBox" name="cmb_muscle"/></item>
+              <item><widget class="QPushButton" name="btn_find_workout"><property name="text"><string>Search</string></property></widget></item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout">
+              <item><widget class="QListWidget" name="lst_exercises"/></item>
+              <item><widget class="QPlainTextEdit" name="textDescription"/></item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout">
+              <item><widget class="QSpinBox" name="spin_sets"/><property name="toolTip"><string>Sets</string></property></item>
+              <item><widget class="QSpinBox" name="spin_reps"/><property name="toolTip"><string>Reps</string></property></item>
+              <item><widget class="QPushButton" name="btn_add_exercise"><property name="text"><string>Add Exercise</string></property></widget></item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QListWidget" name="lst_workout_log"/>
+            </item>
+           </layout>
+          </widget>
+
+          <!-- Profile view page -->
+          <widget class="QWidget" name="profileViewPage">
+           <layout class="QVBoxLayout">
+            <item>
+             <widget class="QFormLayout" name="profileViewForm">
+              <item row="0" column="0"><widget class="QLabel" name="pv_name_label"><property name="text"><string>Name</string></property></widget></item>
+              <item row="0" column="1"><widget class="QLabel" name="pv_name_value"><property name="text"><string>-</string></property></widget></item>
+
+              <item row="1" column="0"><widget class="QLabel" name="pv_age_label"><property name="text"><string>Age</string></property></widget></item>
+              <item row="1" column="1"><widget class="QLabel" name="pv_age_value"><property name="text"><string>-</string></property></widget></item>
+
+              <item row="2" column="0"><widget class="QLabel" name="pv_gender_label"><property name="text"><string>Gender</string></property></widget></item>
+              <item row="2" column="1"><widget class="QLabel" name="pv_gender_value"><property name="text"><string>-</string></property></widget></item>
+
+              <item row="3" column="0"><widget class="QLabel" name="pv_height_label"><property name="text"><string>Height</string></property></widget></item>
+              <item row="3" column="1"><widget class="QLabel" name="pv_height_value"><property name="text"><string>-</string></property></widget></item>
+
+              <item row="4" column="0"><widget class="QLabel" name="pv_weight_label"><property name="text"><string>Weight</string></property></widget></item>
+              <item row="4" column="1"><widget class="QLabel" name="pv_weight_value"><property name="text"><string>-</string></property></widget></item>
+
+              <item row="5" column="0"><widget class="QLabel" name="pv_goal_label"><property name="text"><string>Goal</string></property></widget></item>
+              <item row="5" column="1"><widget class="QLabel" name="pv_goal_value"><property name="text"><string>-</string></property></widget></item>
+
+             </widget>
+            </item>
+           </layout>
+          </widget>
+
+         </widget>
+        </item>
+
+       </layout>
+      </widget>
+
+     </widget>
+    </item>
+
+    <!-- Hidden/auxiliary widgets used by code (placed off-screen area) -->
+    <item>
+     <widget class="QWidget" name="auxWidgets">
+      <property name="visible"><bool>false</bool></property>
+      <layout class="QVBoxLayout" name="auxLayout">
+       <item><widget class="QLineEdit" name="txt_search_aux"/></item>
+      </layout>
+     </widget>
+    </item>
+
+   </layout>
+  </widget>
+
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+
+ <resources/>
+ <connections/>
+</ui>
