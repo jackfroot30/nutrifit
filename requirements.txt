@@ -1,0 +1,6 @@
+PyQt6
+google-generativeai
+opencv-python
+numpy
+pandas
+Pillow
