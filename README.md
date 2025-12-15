@@ -41,7 +41,7 @@ python main.py
 ## Screenshots:
 
 ### Opening Screen
-<img width="1576" height="1600" alt="image" src="https://github.com/user-attachments/assets/5805cc1a-3a39-45ee-aece-1a13817a78ad" />
+<img width="1576" height="1600" alt="image" src="https://raw.github.com/user-attachments/assets/5805cc1a-3a39-45ee-aece-1a13817a78ad" />
 
 
 ### Creating Profile
