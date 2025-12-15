@@ -41,7 +41,8 @@ python main.py
 ## Screenshots:
 
 ### Opening Screen
-[!Screenshot](/assets/WhatsApp Image 2025-12-13 at 1.58.49 PM.jpeg)
+
+<img width="1576" height="1600" alt="image" src="https://github.com/user-attachments/assets/" />
 
 
 ### Creating Profile
