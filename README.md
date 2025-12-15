@@ -41,7 +41,7 @@ python main.py
 ## Screenshots:
 
 ### Opening Screen
-<img width="1576" height="1600" alt="image" src="https://github.com/user-attachments/assets/5805cc1a-3a39-45ee-aece-1a13817a78ad" />
+https://github.com/jackfroot30/nutrifit/blob/a921be5dbfd320295f440e4dd3971286792a3dac/assets/WhatsApp%20Image%202025-12-13%20at%201.58.49%20PM%20(1).jpeg
 
 
 ### Creating Profile
