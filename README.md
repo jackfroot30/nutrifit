@@ -46,44 +46,44 @@ python main.py
 
 
 ### Creating Profile
-<img width="1488" height="1600" alt="image" src="https://github.com/user-attachments/assets/4d3d1098-7439-4fa3-a32d-b07b2f5a208e" />
+<img width="1488" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/createprofile_2.jpeg" />
 
 
 ### Home Screen
-<img width="1600" height="1598" alt="image" src="https://github.com/user-attachments/assets/19ba8771-54ef-4ad4-b599-af11392564f5" />
-<img width="1584" height="1600" alt="image" src="https://github.com/user-attachments/assets/d236f47a-7ce2-4b5d-b37d-bc066831712e" />
+<img width="1600" height="1598" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/todays_progress_3.jpeg" />
+<img width="1584" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/todays_progress_4.jpeg" />
 
 
 ### Recipe Logger
-<img width="1600" height="1598" alt="image" src="https://github.com/user-attachments/assets/6edef6ad-a424-4f41-96ac-cfefd5a07048" />
+<img width="1600" height="1598" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/recipe_logger_5.jpeg" />
 
 #### Adding Ingredients
-<img width="1582" height="1600" alt="image" src="https://github.com/user-attachments/assets/9e10d0fe-2e70-4363-b48d-289fe8b2f340" />
+<img width="1582" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/recipe_logger_6.jpeg" />
 
 
 ### Workout Planner
 
 #### Selecting Muscle Group
-<img width="1579" height="1600" alt="image" src="https://github.com/user-attachments/assets/52cfa112-229b-4d58-9dce-0131e23b9657" />
+<img width="1579" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/workout_planner_7.jpeg" />
 
 #### Adding Exercises
-<img width="1563" height="1600" alt="image" src="https://github.com/user-attachments/assets/5bb7ac8c-14a0-4bc4-90fd-b14887eff0d2" />
+<img width="1563" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/workout_8.jpeg" />
 
 #### Selecting Saved Workouts 
-<img width="1400" height="1206" alt="image" src="https://github.com/user-attachments/assets/08540b8f-e7dd-4e53-940c-b654ddca7e34" />
+<img width="1400" height="1206" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/saved_workouts_9.jpeg" />
 
 
 ### Meditation
 
 #### Set Duration
-<img width="1600" height="1275" alt="image" src="https://github.com/user-attachments/assets/21710b29-9702-45df-b577-548a788135be" />
+<img width="1600" height="1275" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/med_10.jpeg" />
 
 #### Meditate
-<img width="1600" height="1261" alt="image" src="https://github.com/user-attachments/assets/68ea54bd-ca70-4d51-96c9-4044e552b3f3" />
+<img width="1600" height="1261" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/med_12.jpeg" />
 
 
 ## View Profile
-<img width="1598" height="1600" alt="image" src="https://github.com/user-attachments/assets/6f64aecb-32af-489f-9476-6d1282012b6f" />
+<img width="1598" height="1600" alt="image" src="https://github.com/jackfroot30/nutrifit/blob/5ddc7465a4a954bc256b1601abd41e0d06af6359/assets/view_profile_13.jpeg" />
 
 
 
