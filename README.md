@@ -20,7 +20,7 @@ source virtualenv/bin/activate # for Linux & MacOS
 Install Dependencies:
 ```
 pip install -r requirements.txt
-cd src_1
+cd src
 ```
 Run:
 ```
@@ -29,9 +29,9 @@ python main.py
 ## Usage
 An API key from [https://aistudio.google.com/app/api-keys](https://aistudio.google.com/app/apikey) is required for the working of the app. Store the API key in the format `API_KEY=<your api key>` in the same folder as the app.
 
-First, enter the src_1 directory using:
+First, enter the src directory using:
 ```
-cd src_1
+cd src
 ```
 Run the app using:
 ```
