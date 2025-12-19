@@ -9,7 +9,7 @@ def resource_path(realtive_path):
     return os.path.join(base_path,realtive_path)
 
 def get_db_path(db_filename):
-    user_dir = os.path.expanduser('~/Jackfruit/nutrifit_app')
+    user_dir = os.path.expanduser('~/nutrifit')
     if not user_dir:
         os.makedirs(user_dir)
     return os.path.join(user_dir, db_filename)
